@@ -180,4 +180,17 @@ Based on the inputs in this repo and using the business rules in the README the 
 5. Install packages - Run - ```Yarn install```
 6. Run to get results - ```yarn getResults```
 7. Run to format the code - ```yean format```
-8. Run to test the unit tests - ```yarn test``` 
+8. Run to test the unit tests - ```yarn test```
+
+Assumptions and considerations :
+
+- Tried to modularise the code as much possible
+- No file validation is done
+- We can use zod to validate the schema
+- Tried to simplify as much possible - but due to complexity of the logic, its been tricky to use single responsibility principle
+- Due to modularity, we can test each function independently
+- Did my best to consider all the scenarios and exge case for order entities
+- Designed data strcuture first, types for differnt entities
+- As I am using cursor, so took help of intellisense for auto complete some times
+- Unit tests mainly took help of cursor
+- Verified unit test are correct and all the logic tested
