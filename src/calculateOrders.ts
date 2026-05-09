@@ -8,7 +8,7 @@ import { getDateRangeProductResult } from './utils/getDateRangeProduct.js';
  * 
  * @rules : 
  *  - Product sale should be conducted once per order (can have multiple entities in the order)
- *  - Cancelled orders should be credited against the product total
+ *  - Cancelled orders should be credited against the product total (can have multiple entities in the order)
  *  - In the case of product sales being equal for two or more products, sort the products alphabetically and select the first one in the list
  * @input : orders.json and products.json - specific details for order data and product data
  * @output : datae or date range with top sizzling hot product
@@ -80,7 +80,7 @@ export const calculateOrders = (): Result[] => {
   
 
   // INFO: Generating results in the required format with date range and product name
-  
+
   const results = getDateRangeProductResult(productPerDay);
   return results;
 };
