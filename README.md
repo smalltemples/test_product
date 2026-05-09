@@ -170,3 +170,14 @@ Based on the inputs in this repo and using the business rules in the README the 
 3. Considering other inputs and edge cases outside the supplied ones.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## How to run this code
+
+1. Clone the repo from  ''
+2. Use VsCode or cursor and open the project
+3. ```cd test_product```
+4. All code is checked in the main git branch
+5. Install packages - Run - ```Yarn install```
+6. Run to get results - ```yarn getResults```
+7. Run to format the code - ```yean format```
+8. Run to test the unit tests - ```yarn test``` 
